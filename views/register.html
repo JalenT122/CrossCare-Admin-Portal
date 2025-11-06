@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <h2>Sign Up</h2>
+    </div>
+
+    <div id="errorMessage" class="hidden"></div>
+    <div id="successMessage" class="hidden"></div>
+
+    <div style="text-align: center">
+    <form id="registerForm">
+        <div style="margin-bottom: 5px;">
+            <label>Company Name</label>
+            <div class="relative">
+                <input type="text" id="companyName" name="companyName" placeholder="Your Company Here" required />
+            </div>
+        </div>
+        <div style="margin-bottom: 5px;">
+            <label>Role</label>
+            <div class="relative">
+                <input type="text" id="role" name="role" placeholder="Enter Role Here" required />
+            </div>
+        </div>
+        <div style="margin-bottom: 5px;">
+            <label>Email</label>
+            <div class="relative">
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+        </div>
+        <div style="margin-bottom: 5px;">
+            <label>Password</label>
+            <div class="relative">
+                <input type="password" id="password" name="password" placeholder="Enter Password" required />
+            </div>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Confirm Password</label>
+            <div class="relative">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter Password" required />
+            </div>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">Sign Up</button>
+    </form>
+    </div>
+
+    <div style="text-align: center;">
+    <p>
+        Already have an account?
+        <a href="/login">Log In</a>
+    </p>
+    <p> <a href="/">Return to Start Page</a> </p>
+    </div>
+    <script src="../public/js/register.js"></script>
+</body>
+</html>

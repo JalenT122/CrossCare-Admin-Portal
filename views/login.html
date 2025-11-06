@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div>
+        <h2 class="login-text" id="loginText">Login</h2>
+    </div>
+
+    <div id="errorMessage" class="hidden"></div>
+    <div id="successMessage" class="hidden"></div>
+
+    <form id="loginForm">
+        <div class="email">
+            <label>Email</label>
+            <div class="relative">
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+        </div>
+        <div class="password">
+            <label>Password</label>
+            <div class="relative">
+                <input type="password" id="password" name="password" placeholder="Enter Password" required />
+            </div>
+        </div>
+        <div style="text-align: center"> <button type="submit" class="submit-btn" id="submitBtn">Log In</button> </div>
+    </form>
+
+    <div style="text-align: center">
+        <p>
+            Don't have an account?
+            <a href="/register">Sign Up</a>
+        </p>
+        <p> <a href="/">Return to Start Page</a> </p>
+    </div>
+    <script src="../public/js/login.js"></script>
+</body>
+</html>
